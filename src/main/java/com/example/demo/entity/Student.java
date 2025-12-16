@@ -1,7 +1,5 @@
 package com.example.demo.entity;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GenerateValue;
-import jakarta.persistence.GenerateType;
+import jakarta.persistence.*;
 
 
 @Entity
@@ -41,6 +39,9 @@ public class Student{
         this.name=name;
         this.email=email;
         this.cgpa=cgpa;
+    }
+    public Student(){
+        
     }
 
 }
