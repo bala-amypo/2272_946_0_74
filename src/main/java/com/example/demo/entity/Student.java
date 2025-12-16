@@ -1,4 +1,12 @@
+package com.example.demo.entity;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GenerateValue;
+import jakarta.persistence.GenerateType;
+
+
+@Entity
 public class Student{
+    @id
     private int id;
     private String name;
     private String email;
