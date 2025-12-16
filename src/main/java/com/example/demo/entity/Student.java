@@ -2,8 +2,7 @@ public class Student{
     private int id;
     private String name;
     private String email;
-    private String password;
-    private String role;
+    private float cgpa;
     public int getId(){
         return id;
     }
@@ -22,6 +21,18 @@ public class Student{
     public String setEmail(){
         this.email=email;
 
+    }
+    public float getCgpa(){
+        return cgpa;
+    }
+    public flaot setCgpa(){
+        this.cgpa=cgpa;
+    }
+    public student(int id,String name,String email,float cgpa){
+        this.id=id;
+        this.name=name;
+        this.email=email;
+        this.cgpa=cgpa;
     }
 
 }
