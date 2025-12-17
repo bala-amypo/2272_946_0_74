@@ -23,7 +23,7 @@ public class Studentimpl implements StudentService {
     public List<Student> fetchRecord() {
         return repo.findAll();
     }
-    public fetchById(){
+    public optional fetchById(){
         return repo.findById();
     }
 }
