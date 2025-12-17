@@ -1,47 +1,54 @@
 package com.example.demo.entity;
+
 import jakarta.persistence.*;
 
-
-@Entity
-public class Student{
-    @id
-    private int id;
+@Entity 
+public class Student {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private String name;
-    private String email;
+    private String rollnumber;
+    private int age;
     private float cgpa;
-    public int getId(){
+    
+    public int getId() {
         return id;
     }
-    public int setId(){
-        this.id=id;
+    public void setId(int id) {
+        this.id = id;
     }
-    public String getName(){
+    public String getName() {
         return name;
     }
-    public String  setName(){
-        this.name=name;
+    public void setName(String name) {
+        this.name = name;
     }
-    public String getEmail(){
-        return email;
+    public String getRollnumber() {
+        return rollnumber;
     }
-    public String setEmail(){
-        this.email=email;
-
+    public void setRollnumber(String rollnumber) {
+        this.rollnumber = rollnumber;
     }
-    public float getCgpa(){
+    public int getAge() {
+        return age;
+    }
+    public void setAge(int age) {
+        this.age = age;
+    }
+    public float getCgpa() {
         return cgpa;
     }
-    public flaot setCgpa(){
-        this.cgpa=cgpa;
+    public void setCgpa(float cgpa) {
+        this.cgpa = cgpa;
     }
-    public student(int id,String name,String email,float cgpa){
-        this.id=id;
-        this.name=name;
-        this.email=email;
-        this.cgpa=cgpa;
+    public Student(int id, String name, String rollnumber, int age, float cgpa) {
+        this.id = id;
+        this.name = name;
+        this.rollnumber = rollnumber;
+        this.age = age;
+        this.cgpa = cgpa;
     }
-    public Student(){
-        
+    public Student() {
     }
-
+    
 }
