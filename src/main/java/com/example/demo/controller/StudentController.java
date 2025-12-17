@@ -32,6 +32,7 @@ public class StudentController {
     }
     @PutMapping("/update")
     public updateData(@PathVariable int id,@RequestBody Student stu){
+        
 
     }
 }
