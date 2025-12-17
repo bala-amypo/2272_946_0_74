@@ -28,8 +28,8 @@ public class StudentController {
     public List<Student> fetchRecord(){
         return ser.fetchRecord();
     }
-    @GetMapping("/fetchbyid")
-    public optional<Student> fetchById(@PathVariable int id){
+    @GetMapping("/fetchbyid/{id}")
+    public Optional<Student> fetchById(@PathVariable int id){
          return ser.fetchById();
     }
 }
