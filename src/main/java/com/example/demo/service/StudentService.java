@@ -7,5 +7,5 @@ import com.example.demo.entity.Student;
 public interface StudentService {
     Student createData(Student stu);
     List<Student> fetchRecord();
-    Optional<Student> fetchById();
+    Optional<Student> fetchById(int id);
 }
