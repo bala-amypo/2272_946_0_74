@@ -13,6 +13,7 @@ import com.example.demo.service.StudentService;
 public class Studentimpl implements StudentService {
     @Autowired
     StudentRepository repo;
+.
 
     @Override
 
