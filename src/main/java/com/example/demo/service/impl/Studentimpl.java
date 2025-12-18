@@ -26,5 +26,7 @@ public class Studentimpl implements StudentService {
     public Optional<Student> fetchById(int id){
         return repo.findById(id);
     }
-    public 
+    public void deleteDataById(int id) {
+        repo.deleteById(id);
+    }
 }

@@ -8,4 +8,5 @@ public interface StudentService {
     Student createData(Student stu);
     List<Student> fetchRecord();
     Optional<Student> fetchById(int id);
+    void deleteDataById(int id);
 }
