@@ -27,8 +27,8 @@ public class StudentController {
         return ser.fetchRecord();
     }
     @GetMapping("/fetchbyid/{id}")
-    public Optional<Student> fetchById(@PathVariable int id){
-         return ser.fetchById(id);
+    public Optional<Student> fetchDataById(@PathVariable int id){
+         return ser.fetchDataById(id);
     }
     @PutMapping("/update")
     public String updateData(@PathVariable int id,@RequestBody Student stu){
