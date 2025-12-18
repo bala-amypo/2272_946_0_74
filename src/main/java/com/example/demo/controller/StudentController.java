@@ -33,7 +33,7 @@ public class StudentController {
     @PutMapping("/update")
     public String updateData(@PathVariable int id,@RequestBody Student stu){
         stu.setId(id);
-        ser.createdData(stu);
+        ser.createData(stu);
         return "Data updated";
 
     }
